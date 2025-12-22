@@ -23,27 +23,27 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
         required: true
-        default: 'https://github.com/username/repo'
+        default: 'https://github.com/Charles078728/android_device_tecno_BF7'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' # Your Device Tree Branch, make sure it's right.
         required: true
-        default: 'enter_your_branch'
+        default: 'android-11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/'
+        default: 'device/tecn0/BF7'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: ''
+        default: 'BF7'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME (without including .mk, Example: omni_7304F)'
         required: true
-        default: 'omni_'
+        default: 'twrp_BF7'
       BUILD_TARGET:
         description: 'Specify your Build Target' # Pick among boot, recovery and vendor_boot
         required: true
-        default: 'recovery'
+        default: 'boot'
         type: choice
         options:
         - boot
